@@ -1,6 +1,9 @@
-# CNU Robotics CHRISLab ROS Workspace Installation
+# EGOKITUZ Lab Dortoka ROS Workspace Installation
 
 Install and setup files for the basic setup of our software.
+
+*NOTE: This is a fork of [CNURobotics/chris_install] being adapted for the EGOKITUZ Lab to be used with the EGOKITUZ Lab customiez 'Dortoka' Turtlebot (composed of a Kobuki base, an Intel RealSense D435 rgbd camera, and an YDLIDAR X4 laser.*
+
 
 Computer Setup
 --------------
@@ -17,24 +20,24 @@ Computer Setup
  * Install your favorite editor or IDE. (We mostly use QtCreator and atom.)
 
 
-CHRISLab Software Setup
+EGOKITUZLab Software Setup
 -----------------------
 
-#### *If installing a new workspace, remove existing workspace setup from .bashrc,  and reopen terminal sourcing only the /opt/ros/melodic/setup.bash prior to running this script.*
+#### *NOTE: If installing a new workspace, remove existing workspace setup from .bashrc, and reopen terminal sourcing only the /opt/ros/kinetic/setup.bash prior to running this script.*
 
-1. Create workspace root folder (e.g. ~/CHRISLab)  and change to that directory
+1. Create workspace root folder (e.g. ~/EGOKITUZLab)  and change to that directory
 <pre>
-mkdir CHRISLab
-cd CHRISLab
+mkdir EGOKITUZLab
+cd EGOKITUZLab
 </pre>
 
 2. Clone the install setup  (*_Note: the dot at end is critical!_* )
- * `git clone https://github.com/CNURobotics/chris_install.git .`
- * We are choosing to clone within our workspace root folder, as opposed to creating the folder during the clone.  The cloned folder should not be named chris_install.
+ * `git clone https://github.com/xabigarde/egokituz_dortoka_install.git .`
+ * We are choosing to clone within our workspace root folder, as opposed to creating the folder during the clone.  The cloned folder should not be named egokituz_dortoka_install.
 
 3. Change to correct branch
- `git checkout melodic_devel`
- * This version has the CHRISLab iRobot Create and Kobuki-based Turtlebot setup, including the complete `flexible_navigation` demonstration.
+ `git checkout egokituz_noetic`
+ * This version has the EGOKITUZLab iRobot Create and Kobuki-based Turtlebot setup, including the complete `flexible_navigation` demonstration.
 
 4. Run the install script
  `./install.sh`
@@ -43,13 +46,13 @@ cd CHRISLab
 
 6. Test the setup
   `roscd`
-  * you should be in the workspace root /src folder  (e.g. ~/CHRISLab/src )
+  * you should be in the workspace root /src folder  (e.g. ~/EGOKITUZLab/src )
 
 7. Go back to the original directory
  `cd $WORKSPACE_ROOT`
-  * This should put you back where you started (e.g. ~/CHRISLab)
+  * This should put you back where you started (e.g. ~/EGOKITUZLab)
 
-8. Install the CHRISLab specific code
+8. Install the EGOKITUZLab specific code
  * The most complete demonstration instructions can be found at https://github.com/CNURobotics/chris_turtlebot_flexible_navigation
  * `./rosinstall/install_scripts/install_chrislab.sh` for just base software, or
  * `./rosinstall/install_scripts/install_chris_turtlebot.sh` for base + Turtlebot specific, or
@@ -75,5 +78,6 @@ catkin build
 
 11. Enjoy!
 
+[CNURobotics/chris_install]: https://github.com/CNURobotics/chris_install/
 [ROS Installation]: http://wiki.ros.org/ROS/Installation/
 [catkin_tools]: https://catkin-tools.readthedocs.io/en/latest/installing.html
