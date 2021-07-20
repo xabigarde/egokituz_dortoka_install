@@ -1,0 +1,41 @@
+# Standard Turtlebot packages required for EGOKITUZ setup
+- git: {local-name: src/turtlebot,                  uri: 'https://github.com/xabigarde/turtlebot',                  version: egokituz_noetic }
+- git: {local-name: src/turtlebot_msgs,             uri: 'https://github.com/turtlebot/turtlebot_msgs.git',         version: indigo }
+- git: {local-name: src/turtlebot_simulator,        uri: 'https://github.com/xabigarde/turtlebot_simulator.git',    version: egokituz_noetic }
+
+# Kobuki packages:
+- git: {local-name: src/kobuki_desktop,             uri: 'https://github.com/yujinrobot/kobuki_desktop.git',        version: melodic }
+- git: {local-name: src/kobuki_msgs,                uri: 'https://github.com/yujinrobot/kobuki_msgs.git',           version: noetic }
+- git: {local-name: src/kobuki_core,                uri: 'https://github.com/yujinrobot/kobuki_core.git',           version: noetic }
+- git: {local-name: src/kobuki,                     uri: 'https://github.com/yujinrobot/kobuki.git',                version: melodic }
+
+# ECL library by Stonier
+- git: {local-name: src/ecl_core,                   uri: 'https://github.com/stonier/ecl_tools.git',                 version: release/0.61-noetic }
+- git: {local-name: src/ecl_core,                   uri: 'https://github.com/stonier/ecl_lite.git',                 version: release/0.61-noetic }
+- git: {local-name: src/ecl_core,                   uri: 'https://github.com/stonier/ecl_core.git',                 version: release/0.62-noetic }
+- git: {local-name: src/ecl_navigation,             uri: 'https://github.com/stonier/ecl_navigation.git',           version: release/0.60-noetic }
+
+# YUJIN packages
+- git: {local-name: src/yujin_ocs,                  uri: 'https://github.com/yujinrobot/yujin_ocs.git',             version: release/0.8-melodic }
+- git: {local-name: src/yocs_msgs,                  uri: 'https://github.com/yujinrobot/yocs_msgs.git',             version: release/0.7-melodic }
+
+# Custom package for CHRISLab software
+#- git: {local-name: src/chris_ros_turtlebot,                 uri: 'https://github.com/CNURobotics/chris_ros_turtlebot.git',                 version: melodic_devel }
+#- git: {local-name: src/chris_turtlebot_navigation,          uri: 'https://github.com/CNURobotics/chris_turtlebot_navigation.git',          version: melodic_devel }
+#- git: {local-name: src/chris_turtlebot_flexible_navigation, uri: 'https://github.com/CNURobotics/chris_turtlebot_flexible_navigation.git', version: melodic_devel }
+
+# NOT AVAILABLE IN melodic
+#- git: {local-name: src/slam_gmapping,                       uri: 'https://github.com/CNURobotics/slam_gmapping.git',                            version: consistent_tf_prefix_handling }
+# Optional Yujin system files
+#- git: {local-name: src/turtlebot_interactions,    uri: 'https://github.com/turtlebot/turtlebot_interactions.git', version: indigo }
+- git: {local-name: src/turtlebot_apps,              uri: 'https://github.com/xabigarde/turtlebot_apps.git',            version: egokituz_noetic }
+- git: {local-name: src/turtlebot_viz,               uri: 'https://github.com/xabigarde/turtlebot_viz',                 version: egokituz_noetic }
+
+- git: {local-name: src/realsense-ros,               uri: 'https://github.com/xabigarde/realsense-ros',                 version: d435_turtlebot_follower_support}
+- git: {local-name: src/ydlidar_ros_driver,          uri: 'https://github.com/YDLIDAR/ydlidar_ros_driver',              version: master }
+
+- git: {local-name: src/linux_peripheral_interfaces, uri: 'https://github.com/ros-drivers/linux_peripheral_interfaces', version: kinetic }
+- git: {local-name: src/m-explore,                   uri: 'https://github.com/hrnr/m-explore',                          version: noetic-devel}
+#- git: {local-name: src/object_search_project,       uri: 'https://github.com/xabigarde/object_search_project',         version: egokituz}
+- git: {local-name: src/rosbot_description,          uri: 'https://github.com/husarion/rosbot_description',             version: master}
+- git: {local-name: src/tutorial_pkg,                uri: 'https://github.com/xabigarde/tutorial_pkg',                  version: egokituz}

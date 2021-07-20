@@ -32,35 +32,46 @@ cd EGOKITUZLab
 </pre>
 
 2. Clone the install setup  (*_Note: the dot at end is critical!_* )
- * `git clone https://github.com/xabigarde/egokituz_dortoka_install.git .`
  * We are choosing to clone within our workspace root folder, as opposed to creating the folder during the clone.  The cloned folder should not be named egokituz_dortoka_install.
 
-3. Change to correct branch
- `git checkout egokituz_noetic`
+ `git clone https://github.com/xabigarde/egokituz_dortoka_install.git .`
+
+3. Change to correct branch: *egokituz_noetic*
  * This version has the EGOKITUZLab iRobot Create and Kobuki-based Turtlebot setup, including the complete `flexible_navigation` demonstration.
 
+ `git checkout egokituz_noetic`
+
 4. Run the install script
+
  `./install.sh`
 
-5. Follow on-screen instructions to add the new setup to bashrc and re-source the terminal
+5. Follow on-screen instructions to add the new setup to bashrc and re-source the terminal. For example:
+<pre>
+source /home/xabi/EGOKITUZLab/setup.bash
+echo "source /home/xabi/EGOKITUZLab/setup.bash" >> ~/.bashrc
+</pre>
 
-6. Test the setup
+6. Test the setup:
   `roscd`
   * you should be in the workspace root /src folder  (e.g. ~/EGOKITUZLab/src )
 
-7. Go back to the original directory
+7. Go back to the original directory:
+
  `cd $WORKSPACE_ROOT`
   * This should put you back where you started (e.g. ~/EGOKITUZLab)
 
 8. Install the EGOKITUZLab specific code
+<pre>
+./rosinstall/install_scripts/install_egokituz_dortoka.sh
+</pre>
+
  * The most complete demonstration instructions can be found at https://github.com/CNURobotics/chris_turtlebot_flexible_navigation
  * `./rosinstall/install_scripts/install_chrislab.sh` for just base software, or
  * `./rosinstall/install_scripts/install_chris_turtlebot.sh` for base + Turtlebot specific, or
  * `./rosinstall/install_scripts/install_chris_create.sh` for base + Create specific
  * *NOTE:* Create and Turtlebot set ups are compatible with one another in the same workspace.
 
-9. Build and install any external libraries installed in the `$WORKSPACE_ROOT/external` folder
-  * For example:
+9. Build and install any external libraries installed in the `$WORKSPACE_ROOT/external` folder. For example:
 <pre>
 cd $WORKSPACE_ROOT/external/sbpl
 mkdir build
