@@ -16,7 +16,7 @@
 - git: {local-name: src/ecl_navigation,             uri: 'https://github.com/stonier/ecl_navigation.git',           version: release/0.60-noetic }
 
 # YUJIN packages
-- git: {local-name: src/yujin_ocs,                  uri: 'https://github.com/yujinrobot/yujin_ocs.git',             version: release/0.8-melodic }
+- git: {local-name: src/yujin_ocs,                  uri: 'https://github.com/xabigarde/yujin_ocs.git',             version: egokituz_noetic }
 - git: {local-name: src/yocs_msgs,                  uri: 'https://github.com/yujinrobot/yocs_msgs.git',             version: release/0.7-melodic }
 
 # Custom package for CHRISLab software
